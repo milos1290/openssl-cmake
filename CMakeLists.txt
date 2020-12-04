@@ -40,6 +40,8 @@ option( WITH_APPS "Build applications" ON )
 file( STRINGS "${PROJECT_SOURCE_DIR}/include/openssl/opensslv.h" openssl_version_str
   REGEX "^#[\t ]*define[\t ]+OPENSSL_VERSION_NUMBER[\t ]+0x([0-9a-fA-F])+.*" )
 
+set(CMAKE_INSTALL_PREFIX ../../prebuilt/${ANDROID_ABI})
+
 function(from_hex HEX DEC)
   string( TOUPPER "${HEX}" HEX )
   set( _res 0 )

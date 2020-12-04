@@ -96,6 +96,9 @@ Makefile
 /ms/ssleay32.def
 /ms/version32.rc
 
+# Mac
+.DS_Store
+
 # Files created on other branches that are not held in git, and are not
 # needed on this branch
 /include/openssl/asn1_mac.h
